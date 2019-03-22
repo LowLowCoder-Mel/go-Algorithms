@@ -14,7 +14,7 @@ func twoSum(nums []int, target int) ([]int, error){
 		hashMap[nums[i]] = i
 	}
 
-	return []int{0, 0}, errors.New("")
+	return []int{0, 0}, errors.New("No two sum solution")
 }
 
 
