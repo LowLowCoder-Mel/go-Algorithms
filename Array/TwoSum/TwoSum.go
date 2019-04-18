@@ -16,5 +16,3 @@ func twoSum(nums []int, target int) ([]int, error){
 
 	return []int{0, 0}, errors.New("No two sum solution")
 }
-
-

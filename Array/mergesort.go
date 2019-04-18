@@ -8,7 +8,7 @@ func MergeSort(arr []int) {
 		return
 	}
 
-	mergeSort(arr, 0, arrLen - 1)
+	mergeSort(arr, 0, arrLen-1)
 }
 
 func mergeSort(arr []int, start int, end int) {
@@ -18,12 +18,12 @@ func mergeSort(arr []int, start int, end int) {
 
 	mid := (start + end) / 2
 	mergeSort(arr, start, mid)
-	mergeSort(arr, mid + 1, end)
+	mergeSort(arr, mid+1, end)
 	merge(arr, start, mid, end)
 }
 
 func merge(arr []int, start, mid, end int) {
-	tmp := make([]int, end - start + 1)
+	tmp := make([]int, end-start+1)
 
 	i := start
 	j := mid + 1
