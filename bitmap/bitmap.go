@@ -27,4 +27,3 @@ func (b BitMap) Get(value uint) bool {
 	bitIndex := value % 8
 	return BitMap(b)[byteIndex]&(1<<bitIndex) != 0
 }
-
